@@ -1,0 +1,94 @@
+ html {
+     body {
+         background-color: #2a0350;
+         font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+         .title {
+             text-shadow: 3px 3px black;
+         }
+
+         .panel {
+             color: white;
+
+             .question {
+                 background-color: #5305e1;
+                 border-radius: 20px;
+                 border: 4px solid white;
+                 box-shadow: 3px 3px black;
+
+
+             }
+
+
+             .options {
+                 font-size: 26px;
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+                 grid-gap: 20px;
+                 margin-top: 60px;
+
+
+                 div {
+                     border: 4px solid white;
+                     background-color: #771de2;
+                     padding: 20px;
+                     border-radius: 20px;
+                     position: relative;
+                     box-shadow: 3px 3px black;
+
+                     input {
+                         opacity: 0;
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         right: 0;
+                         bottom: 0;
+                     }
+
+                     input[type="radio"]:checked+label {
+                         font-weight: bold;
+                         font-size: 30px;
+
+
+
+                     }
+
+
+                     label:hover {
+                         cursor: pointer;
+                     }
+
+                 }
+
+                 div:hover {
+                     cursor: pointer;
+                     background-color: green;
+                 }
+
+
+
+
+             }
+
+             .submit {
+                 font-size: 25px;
+                 background-color: #5305e1;
+                 border-radius: 20px;
+                 color: white;
+                 border: 4px solid white;
+                 box-shadow: 3px 3px black;
+             }
+         }
+
+         #score {
+             background-color: #5305e1;
+             border-radius: 20px;
+             border: 4px solid white;
+             box-shadow: 3px 3px black;
+         }
+
+     }
+ }
+
+
+ @import"../node_modules/bootstrap/scss/bootstrap.scss";
